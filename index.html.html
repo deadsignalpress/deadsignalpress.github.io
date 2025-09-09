@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rot, Water, and Other Infections | Dead Signal Press</title>
+    <style>
+        /* Base Styles - Dark & Moody */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #0a0a0a;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230a0a0a"/><path d="M0,50 L100,50" stroke="%231a1a1a" stroke-width="1"/><path d="M50,0 L50,100" stroke="%231a1a1a" stroke-width="1"/></svg>');
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: normal;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #8d1f1f; /* Deep blood red for headings */
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #b8a27a; /* Sickly gold for links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #8d1f1f; /* Blood red on hover */
+            text-decoration: underline;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background: transparent;
+            color: #b8a27a;
+            border: 1px solid #b8a27a;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-family: 'Verdana', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #b8a27a;
+            color: #0a0a0a;
+            text-decoration: none;
+        }
+
+        /* Header & Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95)), url('https://placehold.co/1200x800/1a1a1a/555555/png?text=') center/cover no-repeat;
+            text-align: center;
+            padding: 8rem 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .publisher {
+            font-family: 'Verdana', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            color: #8d1f1f;
+            margin-bottom: 2rem;
+        }
+
+        .book-cover {
+            width: 280px;
+            margin: 2rem auto;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+            border: 2px solid #333;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #999;
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        /* About the Book Section */
+        .about-book {
+            background-color: #111;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+        }
+
+        .story-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .story-list li {
+            margin-bottom: 2.5rem;
+            padding-left: 0;
+        }
+
+        .story-title {
+            color: #b8a27a;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            background: #111;
+            padding: 4rem 0;
+        }
+
+        .retailers {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            background: #080808;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+
+        .footer-logo {
+            font-family: 'Verdana', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 1.2rem;
+            color: #8d1f1f;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .hero { padding: 5rem 0; }
+            .book-cover { width: 220px; }
+            .retailers { flex-direction: column; align-items: center; }
+            .btn { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <p class="publisher">A New Release from Dead Signal Press</p>
+            <h1>Rot, Water, and Other Infections</h1>
+            <p class="tagline">Four Horror Stories of Decay, Madness, and the Supernatural</p>
+            <!-- USING YOUR BOOK COVER FILE -->
+            <img src="Rot Book Front Cover 8.625x11.25 inches.png" alt="Cover of Rot, Water, and Other Infections by S.D. Blackwood" class="book-cover">
+            <br>
+            <a href="#purchase" class="btn">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- About the Book -->
+    <section class="about-book" id="about">
+        <div class="container">
+            <h2>Delve into the Decay</h2>
+            <p>Dead Signal Press is proud to present a collection that festers at the crossroads of body horror and psychological terror. <em>Rot, Water, and Other Infections</em> is a visceral journey into the things that break down—from the wood of a forgotten house, to the sanity of a lonely mind, to the very flesh on our bones.</p>
+
+            <p>This debut collection features four chilling novellas:</p>
+            <ul class="story-list">
+                <li>
+                    <span class="story-title">1. The Rot Beneath</span>
+                    In the deep South of Mississippi, a woman inherits her grandmother’s crumbling home only to discover that something festers beneath the floorboards. What begins as a foul odor soon becomes a grotesque infestation that spreads into her body, mind, and soul. Some inheritances are better left untouched.
+                </li>
+                <li>
+                    <span class="story-title">2. Don’t Drink the Water</span>
+                    In South Central Los Angeles, a teenage girl realizes the people she loves are changing — her friends, her neighbors, even her own family. Their eyes are dull, their skin ripples, their words drip with something inhuman. All of it started with the tap water. To survive, she must decide whether to resist the infection — or let it consume her.
+                </li>
+                <li>
+                    <span class="story-title">3. The Thing You Brought Back</span>
+                    Curiosity drives a young woman into a forgotten part of Los Angeles where urban legends whisper of a place that swallows people whole. She goes looking for a story but finds something else instead — something that follows her back, seeping into her life, her friends, and her dreams. Some stories should never be told.
+                </li>
+                <li>
+                    <span class="story-title">4. Scrape Me Clean</span>
+                    A Black lesbian in her 40s struggles with personal trauma and broken memories — but her body begins betraying her in grotesque ways. Her skin peels, her muscles tear, and something inside claws to be free. In a desperate attempt to purge the infection, she spirals into madness, discovering that some wounds can never be scraped clean.
+                </li>
+            </ul>
+
+            <p>For readers of Thomas Ligotti, Carmen Maria Machado, and Brian Evenson, this collection will linger in your mind long after the final page… and make you wary of the dark, damp corners of your world.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action / Purchase -->
+    <section class="cta" id="purchase">
+        <div class="container">
+            <h2>Available Now</h2>
+            <p>Embrace the infection. Purchase your copy today.</p>
+            <div class="retailers">
+                <a href="https://amzn.to/4my4uM9" class="btn">Amazon</a>
+                <a href="#" class="btn">Barnes & Noble</a>
+                <a href="#" class="btn">Bookshop.org</a>
+                <a href="#" class="btn">Direct from Publisher</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-logo">Dead Signal Press</p>
+            <p>Publishing the finest in contemporary horror and weird fiction.</p>
+            <p>Follow us for news and updates: <a href="https://www.instagram.com/deadsignalpress/" target="_blank">Instagram @deadsignalpress</a> | <a href="#">Newsletter</a></p>
+            <p>&copy; 2023 Dead Signal Press. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
